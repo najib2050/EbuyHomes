@@ -1,0 +1,145 @@
+.media{
+   max-width: 100vw;
+   height:10vh ;
+   background-color:#0B2C3C;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   border-radius: 10px;
+   color: white;
+}
+.media .email-location{
+
+   display: flex;
+   gap: 40px;
+   align-items: center;
+
+}
+.media .soctialMedia{
+   width: 30%;
+   /* background-color: red; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.media .soctialMedia #icons{
+   /* background-color: red; */
+   display: flex;
+   gap:20px;
+}
+.media .soctialMedia .btn button{
+   color: white;
+   background-color:#F65A36;
+   font-size: 15px;
+   padding: 15px;
+   outline: none;
+   border: none;
+}
+.media .toggleIcon{
+   display: none;
+}
+
+.hearderMain{
+   background-color:#FFFFFF;
+   max-width: 100vw;
+   height:10vh ;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   box-shadow: 1px .1px 1px 0px black;
+   border: none;
+   border-radius: 10px;
+
+}
+
+.hearderMain #headerNaveBar ul{
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   text-transform: capitalize;
+   gap: 10px;
+}
+.hearderMain .headerSearch span .bi-search{
+   background-color:white;
+   margin: 10px;
+}
+.hearderMain .headerSearch span .bi-person {
+   background-color:white;
+   margin: 10px;
+
+}
+.hearderMain .headerSearch span .bi-cart2{
+   background-color:white;
+   margin: 10px;
+
+}
+
+.hearderMain .toggle{
+   /* background-color: red; */
+   display: none;
+}
+@media (max-width:800px) {
+   .media .toggleIcon{
+      display: block;
+   }
+   .media .email-location{
+      font-size: 10px;
+   }
+   .media .soctialMedia #icons{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      background-color:#0B2C3C;
+      top: 54px;
+      width: 100px;
+      height: 200px;
+      padding: 30px;
+      /* left: -300px; */
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px;
+      box-shadow: 5px 2px 2px 1px grey ;
+      transition: .4 ease-out;
+   }
+   .media .soctialMedia #icons.active {
+      right: -300px;
+   }
+   .media .soctialMedia .btn button{
+      color: white;
+      background-color:#F65A36;
+      font-size: 12px;
+      padding: 8px;
+      outline: none;
+      border: none;
+   }
+   
+   .hearderMain #headerNaveBar ul{
+      background-color: rgb(91, 91, 177);
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-around;
+      position: fixed;
+      top: 105px;
+      right: 5px;
+      width: 200px;
+      height: 70vh;
+      box-shadow: 0 40px 60px rgb(77, 32, 32) ;
+      margin-top: 0;
+      border-radius: 10px;
+      transition: 0.7s ease;
+   }
+   .hearderMain #headerNaveBar.active ul{
+      right: -250px;
+   }
+   .hearderMain .toggle{
+      /* background-color: red; */
+      display: flex;
+      max-width: 200px;
+   }
+   .hearderMain .toggle i{
+      font-size: 20px;
+      background-color: white;
+      cursor: pointer;
+   }
+   
+}
